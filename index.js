@@ -112,13 +112,12 @@ class Board extends React.Component {
 	        	{rows}
 	        </div>
 	       	<div className="replayButtonPanel">
-	       		<div className="replayButton" onClick={() => this.startOver()}>  </div>
+	       		<div className="replayButton" onClick={() => this.startOver()}>REPLAY</div>
 	       	</div>
 	      </div>
 	    );
   	}
 }
-
 
 class Game extends React.Component {
   render() {
@@ -126,10 +125,6 @@ class Game extends React.Component {
       <div className="game">
         <div className="game-board">
           <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
         </div>
       </div>
     );
